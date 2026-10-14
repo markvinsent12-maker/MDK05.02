@@ -98,3 +98,26 @@ for ($i = 1; $i <= $b; $i++) {
 }
 echo "</pre>";
 ?>
+
+<h3>Задача 6</h3>
+<?php
+$n = 36;
+for ($i = 1; $i <= $n; $i++) {
+    if ($n % $i == 0) {
+        echo "$i";
+    }
+}
+?>
+
+<h3>Задача 7</h3>
+<?php
+$number = 12345;
+$product = 1;
+$numberStr = (string)$number;
+for ($i = 0; $i < strlen($numberStr); $i++) {
+    $char = $numberStr[$i];
+    $digit = (int)$char;
+    $product = $product * $digit;
+}
+echo "Произведение чисел $product";
+?>
